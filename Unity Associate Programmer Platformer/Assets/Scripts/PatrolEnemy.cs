@@ -37,7 +37,7 @@ public class PatrolEnemy : MonoBehaviour
             {
                 currentPatrolPoint++;
 
-                if (currentPatrolPoint >= patrolPoints.Length)  
+                if (currentPatrolPoint >   patrolPoints.Length - 1)  
                 {
                     currentPatrolPoint = 0;
                 }
