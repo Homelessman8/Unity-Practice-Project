@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class ExtraChallengeEnemy : MonoBehaviour
 {
-    /*
+    
     public Stats enemyStats;
 
     [Tooltip("The transform to which the enemy will pace back and forth to.")]
     public Transform[] patrolPoints;
 
-    private int currentPatrolPoint = 1.0f;
+    private int currentPatrolPoint = 0;
 
     /// <summary>
     /// Contains tunable parameters to tweak the enemy's movement.
@@ -21,7 +21,7 @@ public class ExtraChallengeEnemy : MonoBehaviour
         [Header("Enemy Settings")]
 
         [Tooltip("How fast the enemy moves.")]
-        public float speed =10 ;
+        public float speed;
 
         [Tooltip("Whether the enemy should move or not")]
         public bool move;
@@ -32,23 +32,23 @@ public class ExtraChallengeEnemy : MonoBehaviour
     {
         
         //if the enemy is allowed to move
-        if (enemyStats.move = true)
+        if (enemyStats.move == true)
         {
             Vector3 moveToPoint = patrolPoints[currentPatrolPoint].position;
-            transform.position = Vector3.MoveTowards(transform.position, moveToPoint, enemyStatsspeed * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, moveToPoint, enemyStats.speed * Time.deltaTime);
            
-            if (Vector3.Distance(transform.position, moveToPoint < 0.01f)
+            if (Vector3.Distance(transform.position, moveToPoint) < 0.01f)
             {
                 currentPatrolPoint++;
                 
-                if (currentPatrolPoint > patrolPoints.Length)
+                if (currentPatrolPoint >= patrolPoints.Length)
                 {
-                    currentPatrolPoint == 0;
+                    currentPatrolPoint = 0;
                 }
             
             }
         }
         
     }
-    */
+    
 }

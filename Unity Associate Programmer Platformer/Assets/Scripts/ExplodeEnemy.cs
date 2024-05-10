@@ -43,7 +43,7 @@ public class ExplodeEnemy : MonoBehaviour
     private void Update()
     {
         //Check to see how close the player is to the enemy
-        if (Vector3.Distance(transform.position, playerTransform.position) > enemyStats.explodeDist)
+        if (Vector3.Distance(transform.position, playerTransform.position) <= enemyStats.explodeDist)
         {
             //Explode if player is within range
             StartCoroutine("Explode");
