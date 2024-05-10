@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public struct Stats
     {
         [Tooltip("The current player health")]
-        public float health;
+        public float health ;
         
         [Tooltip("How fast the player runs.")]
         public float speed;
