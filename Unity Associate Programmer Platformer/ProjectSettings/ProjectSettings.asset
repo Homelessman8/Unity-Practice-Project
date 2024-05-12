@@ -688,6 +688,7 @@ PlayerSettings:
     Collab: 0
     Game Performance: 0
     Purchasing: 0
+    UDP: 0
     UNet: 1
     Unity Ads: 0
   luminIcon:
@@ -704,11 +705,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: e0cc6452-8c27-42f2-982b-50a1ff72ff18
+  cloudProjectId: a2fcbae7-d1f2-483a-9788-8c76eb59e614
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Legends Platformer Proto
-  organizationId: jason-232863
+  projectName: 3D Platformer Game
+  organizationId: sookram1208
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   virtualTexturingSupportEnabled: 0
