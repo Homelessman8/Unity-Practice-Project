@@ -80,7 +80,7 @@ public class RefactorEnemy : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             player = other.gameObject;
-            enemyStats.idle = false;
+            idle = false;
         }
     }
 
@@ -89,7 +89,7 @@ public class RefactorEnemy : MonoBehaviour
         //stop chasing if the player gets far enough away
         if (other.gameObject.tag == "Player")
         {
-            enemyStats.idle = true;      
+            idle = true;      
         }
     }
 
@@ -129,7 +129,7 @@ public class RefactorEnemy : MonoBehaviour
             if (Vector3.Distance(transform.position, player.transform.position) < enemyStats.explodeDist)
             {
                 StartCoroutine("Explode");
-                enemyStats.idle = true;
+                idle = true;
             }
         }
 
